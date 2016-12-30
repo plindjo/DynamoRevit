@@ -283,6 +283,11 @@ namespace Revit.Elements
 
         }
 
+        public static Material Wrap( Autodesk.Revit.DB.Material ele, bool isRevitOwned )
+        {
+            return Material.FromExisting( ele, isRevitOwned );
+        }
+
 
         #endregion
 
